@@ -31,7 +31,7 @@ export default function App() {
     const [fgColor, setFgColor] = useState<string>("#000000"); // QR 코드 색상
     const [bgColor, setBgColor] = useState<string>("#ffffff"); // 배경 색상
     const [logo, setLogo] = useState<string | null>(null); // 중앙에 들어갈 로고 이미지
-    const [logoSize, setLogoSize] = useState<number>(40); // 로고 크기
+    const [logoSize] = useState<number>(40); // 로고 크기
     const [level, setLevel] = useState<ErrorCorrectionLevel>("H");
 
     // 히스토리(기록) 상태: 초기값은 브라우저의 localStorage에서 불러옴
